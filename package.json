@@ -1,0 +1,17 @@
+{
+  "name": "gulp-dest-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "destTest": "gulp destTest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "tree-cli": "^0.6.7",
+    "tree-to-list": "^2.0.0"
+  }
+}
