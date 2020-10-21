@@ -6,4 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: run
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
       run: ./node_modules/.bin/gulp destTest
