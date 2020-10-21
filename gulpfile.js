@@ -15,7 +15,7 @@ gulp.task('destTest2', function (cb) {
   cb();
 });
 
-gulp.task('destTest', gulp.series('destTest1', 'destTest2', function (cb) {
+gulp.task('destTest', ['destTest1', 'destTest2'], function (cb) {
   tree({
     base: './dist/',
     noreport: true,
@@ -24,4 +24,4 @@ gulp.task('destTest', gulp.series('destTest1', 'destTest2', function (cb) {
     console.log(res.report);
     cb();
   });
-}))
+})
